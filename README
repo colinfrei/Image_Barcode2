@@ -1,7 +1,12 @@
 Adjusted by Colin to get Ean13 barcode to work in Symfony
 
-Simply add this line to your autoload.php in Symfony:
-`require_once __DIR__.'/../vendor/pear/Image_Barcode2/autoload.php';`
+To use, add these lines to your deps file in Symfony:
+    [Image_Barcode2]
+        git=https://github.com/colinfrei/Image_Barcode2.git
+        target=pear/Image_Barcode2
+
+and add this line to your autoload.php file:
+    require_once __DIR__.'/../vendor/pear/Image_Barcode2/autoload.php';
 
 #####################################
 
